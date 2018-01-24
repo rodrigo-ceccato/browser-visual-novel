@@ -1,0 +1,12 @@
+.textArea{
+    height: 20%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-style: dotted;
+    position: absolute;
+    bottom: 0;
+    padding: 1%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.24);
+}

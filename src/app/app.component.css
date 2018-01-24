@@ -1,0 +1,51 @@
+.sideBar{
+    position: absolute;
+    width: 15%;
+    background-color: rgba(105, 126, 64, 0.438);
+    height: 100vh;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.rightSideBar{
+    right: 0px;
+    top: 0px;
+    text-align: right;
+    width: 25%;
+}
+
+.sideBar > * {
+    width: 100%;
+}
+
+.sideBar > button {
+    height: 8%;
+}
+
+.rightSideBar > h1{
+    text-align: center;
+}
+
+.cellPhone{
+    border-style: solid;
+    height: 45%;
+    background-color: white;
+}
+
+.phoneScreen{
+    background-color: rgba(128, 128, 128, 0.521);
+    margin: 5%;
+    border-style: solid;
+    height: 90%;
+    width: 90%;
+}
+
+.gameArea{
+    position: absolute;
+    display: flex;
+    background-color: rgb(153, 153, 184);
+    height: 100vh;
+    /* TODO: perguntar como dividir a página */
+    margin-left: 15%;
+    width: 60%;
+}
