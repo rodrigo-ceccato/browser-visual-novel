@@ -4,7 +4,7 @@
     background-color: rgb(189, 189, 189);
     height: 100vh;
     background-size:cover;
-    /* background-image: url("/assets/pictures/bkg/no-bkg.jpg"); */
+    /* background-image: url('/assets/pictures/bkg/no-bkg.jpg'); */
 
     /* TODO: perguntar como dividir a página */
     margin-left: 15%;

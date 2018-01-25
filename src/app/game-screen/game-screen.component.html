@@ -1,4 +1,4 @@
-<div class="gameArea" ng-style="{'background-image':'url(/assets/pictures/bkg//assets/pictures/bkg/{{selectedBkg}})'}">
+<div class="gameArea" [ngStyle]="{'background-image': 'url(' + myBackgroundUrl + ')'}">
 
   <div class="character">
     <img src="{{personagem}}" alt="">
