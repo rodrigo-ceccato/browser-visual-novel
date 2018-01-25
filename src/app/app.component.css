@@ -25,13 +25,3 @@
 .rightSideBar > h1{
     text-align: center;
 }
-
-.gameArea{
-    position: absolute;
-    display: flex;
-    background-color: rgb(153, 153, 184);
-    height: 100vh;
-    /* TODO: perguntar como dividir a página */
-    margin-left: 15%;
-    width: 60%;
-}

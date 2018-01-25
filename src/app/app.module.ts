@@ -8,6 +8,7 @@ import { GameLocationComponent } from './game-location/game-location.component';
 import { GameImageComponent } from './game-image/game-image.component';
 import { GameTextComponent } from './game-text/game-text.component';
 import { PhoneComponent } from './phone/phone.component';
+import { GameScreenComponent } from './game-screen/game-screen.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PhoneComponent } from './phone/phone.component';
     GameLocationComponent,
     GameImageComponent,
     GameTextComponent,
-    PhoneComponent
+    PhoneComponent,
+    GameScreenComponent
   ],
   imports: [
     BrowserModule
