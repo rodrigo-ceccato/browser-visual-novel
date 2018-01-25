@@ -7,6 +7,7 @@ import { GameLogicComponent } from './game-logic/game-logic.component';
 import { GameLocationComponent } from './game-location/game-location.component';
 import { GameImageComponent } from './game-image/game-image.component';
 import { GameTextComponent } from './game-text/game-text.component';
+import { PhoneComponent } from './phone/phone.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { GameTextComponent } from './game-text/game-text.component';
     GameLogicComponent,
     GameLocationComponent,
     GameImageComponent,
-    GameTextComponent
+    GameTextComponent,
+    PhoneComponent
   ],
   imports: [
     BrowserModule

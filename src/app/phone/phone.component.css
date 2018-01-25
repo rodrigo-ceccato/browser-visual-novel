@@ -1,0 +1,57 @@
+.cellPhone{
+    border-style: solid;
+    height: 45%;
+    background-color: white;
+}
+
+.phoneScreen{
+    background-color: rgba(128, 128, 128, 0.521);
+    margin: 5%;
+    border-style: solid;
+    height: 90%;
+    width: 90%;
+}
+
+.speech-bubble {
+    padding: 1%;
+    width: 50%;
+    margin-top: 10%;
+	position: relative;
+	background: #00aabb;
+    border-radius: .4em;
+    margin-left: 5%;
+}
+
+.speech-question-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.75em solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -0.375em;
+	margin-left: -0.75em;
+}
+
+.speech-response-bubble{
+    margin-left: 45%;
+}
+
+.speech-response-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.75em solid transparent;
+	border-left-color: #00aabb;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -0.375em;
+	margin-right: -0.75em;
+}

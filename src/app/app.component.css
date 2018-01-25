@@ -26,20 +26,6 @@
     text-align: center;
 }
 
-.cellPhone{
-    border-style: solid;
-    height: 45%;
-    background-color: white;
-}
-
-.phoneScreen{
-    background-color: rgba(128, 128, 128, 0.521);
-    margin: 5%;
-    border-style: solid;
-    height: 90%;
-    width: 90%;
-}
-
 .gameArea{
     position: absolute;
     display: flex;
