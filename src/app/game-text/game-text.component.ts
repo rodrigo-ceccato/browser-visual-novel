@@ -13,8 +13,4 @@ export class GameTextComponent implements OnInit {
   ngOnInit() {
   }
 
-  updateTextContent(text){
-    this.textContent = text;
-  }
-
 }

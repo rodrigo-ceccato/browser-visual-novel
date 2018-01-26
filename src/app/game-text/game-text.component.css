@@ -12,5 +12,5 @@
     z-index: 20;
     font-size: 25px;
     overflow-x: hidden;
-    overflow-x: auto;
+    overflow-y: scroll;
 }

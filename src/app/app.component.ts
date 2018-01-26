@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SelectorContext } from '@angular/compiler';
 import { Message } from './phone/phone.component';
-import { chapterOne } from './chapter-class/chapter-one'
+import { chapterOne } from './chapter-class/chapter-one';
 
 @Component({
   selector: 'app-root',
@@ -18,20 +18,25 @@ export class AppComponent {
   showGameHud = false;
   showGameImage = false;
   showChatRoom = true;
+  capituloAtual = [];
+  posicaoCapitulo: number;
+  changeChapter = false;
 
   conversation = [new Message(true, "Bom dia!")];
   convName = "Jamires";
-  choices = [new Choice(0, "Escolha A"), new Choice(1, "Escolha B")];
-  inventary = [new InvItem(0, "Chave da Porta"), new InvItem(1, "Chave do Carro")];
+  choices = [];
+  inventary = [];
 
 
   onSelectChoice(choice: Choice): void {
-    this.selectedChoice = choice;
-    this.displayText = choice.text;
-    console.log("Clicked on " + this.selectedChoice.text);
-    this.inventary.push(new InvItem(this.inventary.length, "Adicionou item ao inventario"));
-    this.conversation.push(new Message(false, "Adicionou mensagem A"));
-    this.conversation.push(new Message(true, "Adicionou mensagem B"));
+    this.posicaoCapitulo = choice.id;
+    this.updateGameStatus();
+    // this.selectedChoice = choice;
+    // this.displayText = "as";
+    // this.inventary.push(new InvItem(this.inventary.length, "Adicionou item ao inventario"));
+    // this.conversation.push(new Message(false, "Adicionou mensagem A"));
+    // this.conversation.push(new Message(true, "Adicionou mensagem B"));
+    
   }
 
   nextChapter(status:string){
@@ -39,11 +44,31 @@ export class AppComponent {
     this.showChatRoom = false;
     this.showGameImage = true;
     this.showGameHud = true;
+    this.capituloAtual = chapterOne;
+    this.posicaoCapitulo = 0;
+    this.updateGameStatus();
+  }
+
+  updateGameStatus(){
+    this.convName = this.capituloAtual[this.posicaoCapitulo].convName;
+    this.conversation = this.capituloAtual[this.posicaoCapitulo].conversation;
+    this.personagemImg = this.capituloAtual[this.posicaoCapitulo].personagemImg;
+    this.bkgImg = this.capituloAtual[this.posicaoCapitulo].bkgImg;
+    this.choices = this.capituloAtual[this.posicaoCapitulo].choices;
+    this.displayText = this.capituloAtual[this.posicaoCapitulo].displayText;
+    this.inventary = this.capituloAtual[this.posicaoCapitulo].inventary;
+    //work with change chapter
   }
 }
 
 export class gameStatus{
-
+  convName: string;
+  conversation = [];
+  personagemImg: string;
+  bkgImg: string;
+  displayText: string;
+  inventary= [];
+  choices = [];
 }
 
 export class Choice {
