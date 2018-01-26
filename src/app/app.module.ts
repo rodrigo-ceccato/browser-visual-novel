@@ -9,8 +9,7 @@ import { GameImageComponent } from './game-image/game-image.component';
 import { GameTextComponent } from './game-text/game-text.component';
 import { PhoneComponent } from './phone/phone.component';
 import { GameScreenComponent } from './game-screen/game-screen.component';
-import { ChoiceComponent } from './choice/choice.component';
-
+import { ChatRoomComponent } from './chat-room/chat-room.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,7 @@ import { ChoiceComponent } from './choice/choice.component';
     GameTextComponent,
     PhoneComponent,
     GameScreenComponent,
-    ChoiceComponent
+    ChatRoomComponent
   ],
   imports: [
     BrowserModule

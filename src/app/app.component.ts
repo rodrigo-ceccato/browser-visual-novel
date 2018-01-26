@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SelectorContext } from '@angular/compiler';
 import { Message } from './phone/phone.component';
+import { chapterOne } from './chapter-class/chapter-one'
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,9 @@ export class AppComponent {
   displayText:string;
   personagemImg: string = "/assets/pictures/chars/char1.png";
   bkgImg: string = "/assets/pictures/bkg/bkg-room.jpg";
+  showGameHud = false;
+  showGameImage = false;
+  showChatRoom = true;
 
   conversation = [new Message(true, "Bom dia!")];
   convName = "Jamires";
@@ -29,6 +33,17 @@ export class AppComponent {
     this.conversation.push(new Message(false, "Adicionou mensagem A"));
     this.conversation.push(new Message(true, "Adicionou mensagem B"));
   }
+
+  nextChapter(status:string){
+    console.log("recebi: " + status);
+    this.showChatRoom = false;
+    this.showGameImage = true;
+    this.showGameHud = true;
+  }
+}
+
+export class gameStatus{
+
 }
 
 export class Choice {
