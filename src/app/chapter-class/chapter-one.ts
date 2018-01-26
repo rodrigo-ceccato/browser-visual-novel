@@ -14,31 +14,44 @@ export const chapterOne =[
     //0
     {
         gameControl: 0,
-        convName: "NO MESSAGE",
+        convName: "Sem mensagem",
         conversation: [],
-        personagemImg: "/assets/pictures/chars/char1.png",
+        personagemImg: "",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [],
         choices:
-          [new Choice(1, "Próximo")],
-        displayText: "Ei acorde!!!"
+          [new Choice(1, "Deixa chave")],
+        displayText: "[Você fecha o chat e se prepara para deixar a chave sob o tapete]"
     },
    
     //1
     {
+    gameControl: 0,
+    convName: "Sem mensagem",
+    conversation: [],
+    personagemImg: "",
+    bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
+    inventary: [new InvItem(0, "Chave da porta")],
+    choices:
+      [new Choice(2, "Deixa chave")],
+    displayText: "[Você fecha o chat e se prepara para deixar a chave sob o tapete]"
+    },
+
+    //2
+    {
+      //game control 1 inicia zumbido
       gameControl: 1,
-      convName: "mensagem aqui",
+      convName: "sem mensagem",
       conversation: [],
       personagemImg: "/assets/pictures/chars/char1.png",
       bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
       inventary: [],
       choices:
-        [new Choice(2, "Pegar chaves"),
-         new Choice(0, "Voltar a dormir")],
-      displayText: "Ei acorde! Pegue as chaves do carro."
+        [new Choice(2, "Próximo")],
+      displayText: "Jogador: malditos insetos tem mais deles aqui? eu não vejo nenhum ..\n\nEsposa *brava*:Graças a deus onde você estava???\n\nJogador:  Eu só sai para botar a chave debaixo do tapete ...\n\nEsposa: E demorou 3 horas???\n\nJogador: o que? Se isso é uma brincadeira está na hora de parar. você esta me assustando ....\n\nEsposa: Você deve estar de brincadeira! Eu quase liguei para a polícia!  Você não acredita em mim???"
     },
 
-    //2
+    //3
     {
         gameControl: 0,
         convName: "mensagem aqui",

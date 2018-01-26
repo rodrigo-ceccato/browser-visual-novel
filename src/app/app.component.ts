@@ -49,7 +49,8 @@ export class AppComponent {
     this.showGameImage = true;
     this.showGameHud = true;
     this.capituloAtual = chapterOne;
-    this.posicaoCapitulo = 0;
+    // atencao: comeca na posicao UM 1
+    this.posicaoCapitulo = 1;
     this.updateGameStatus();
   }
 
