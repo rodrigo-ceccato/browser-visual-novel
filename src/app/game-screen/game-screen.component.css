@@ -7,23 +7,24 @@
     /* background-image: url('/assets/pictures/bkg/no-bkg.jpg'); */
 
     /* TODO: perguntar como dividir a página */
-    margin-left: 15%;
-    width: 60%;
+    /* margin-left: 15%; */
+    width: 100%;
   }
 
 .character {
     /* display: flex; */
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: fixed;
     bottom: 0px;
-    align-content: space-around;
     overflow: hidden;
+    z-index: 10;
+    max-height: 99%;
+    align-content: space-around;
 }
 
-.backgroundImg{
+/* not needed anymore */
+/* .backgroundImg{
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
+} */

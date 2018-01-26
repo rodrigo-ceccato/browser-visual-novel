@@ -1,7 +1,12 @@
 <div class="leftSideBar sideBar">
   <h1>Ações</h1>
   <br>
-  <button class="btn btn-default" (click)="updateTextContent('Change is good')">XD</button>
+  <button *ngFor="let choice of choices"  
+    class="btn btn-default" 
+    (click)="onSelectChoice(choice)">
+    {{choice.text}}
+  </button>
+  
 </div>
 
 <div class="rightSideBar sideBar">

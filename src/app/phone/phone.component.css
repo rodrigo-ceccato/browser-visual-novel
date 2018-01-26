@@ -1,7 +1,7 @@
 .cellPhone{
     border-style: solid;
     height: 45%;
-    background-color: white;
+    background-color: rgb(63, 42, 42);
 }
 
 .phoneScreen{
@@ -57,4 +57,43 @@
 	border-top: 0;
 	margin-top: -0.375em;
 	margin-right: -0.75em;
+}
+
+.caller-name{
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #dcfac7;
+	color: rgb(0, 0, 0);
+	align-content: center;
+	z-index: 10;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-bottom:3%;
+}
+
+.response-box {
+	background-color: grey;
+	border-top-style: dashed;
+	margin-top: 10%;
+	height: 13%;
+	display: flex;
+	align-content: space-around;
+	bottom: 0px;
+}
+
+#input-box {
+	float: left;
+}
+
+#input-box > button {
+	width: 30%;
+}
+
+#input-box > input {
+	width: 60%;
 }

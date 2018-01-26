@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameScreenComponent implements OnInit {
 
-  personagem = "https://s-media-cache-ak0.pinimg.com/originals/1e/d2/09/1ed2095bd7b2e32469b336f5333e9c1a.png";
-  myBackgroundUrl = "/assets/pictures/bkg/no-bkg.jpg";
+  personagem = "/assets/pictures/chars/char1.png";
+  myBackgroundUrl = "/assets/pictures/bkg/bkg-room.jpg";
 
   constructor() {
 

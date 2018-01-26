@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameTextComponent implements OnInit {
 
-  textContent = "Hey,I Work!";
+  textContent = "Carla: Ei, está na hora de acordar!";
 
   constructor() { }
 
