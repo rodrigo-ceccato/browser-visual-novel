@@ -23,6 +23,9 @@ export class AppComponent {
   posicaoCapitulo: number;
   changeChapter = false;
 
+  //audio file
+  zumbido = new Audio('../assets/zumbido.mp3');
+
   conversation = [new Message(true, "Bom dia!")];
   convName = "Jamires";
   choices = [];
@@ -58,6 +61,12 @@ export class AppComponent {
     this.choices = this.capituloAtual[this.posicaoCapitulo].choices;
     this.displayText = this.capituloAtual[this.posicaoCapitulo].displayText;
     this.inventary = this.capituloAtual[this.posicaoCapitulo].inventary;
+
+    if(this.capituloAtual[this.posicaoCapitulo].gameControl == 1){
+      this.zumbido.loop = true;
+      this.zumbido.play();
+    }
+
     //work with change chapter
   }
 }

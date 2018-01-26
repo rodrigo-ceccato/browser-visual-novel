@@ -26,7 +26,7 @@ export const chapterOne =[
    
     //1
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "mensagem aqui",
       conversation: [],
       personagemImg: "/assets/pictures/chars/char1.png",
