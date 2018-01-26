@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-game-screen',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameScreenComponent implements OnInit {
 
-  personagem = "/assets/pictures/chars/char1.png";
-  myBackgroundUrl = "/assets/pictures/bkg/bkg-room.jpg";
+  @Input() personagem;
+  @Input() myBackgroundUrl;
 
   constructor() {
 

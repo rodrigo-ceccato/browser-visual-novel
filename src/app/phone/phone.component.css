@@ -15,13 +15,18 @@
 }
 
 .speech-bubble {
-    padding: 1%;
-    width: 50%;
+	padding: 3%;
+	text-align: left;
+	/* width: auto; */
+    width: 75%;
     margin-top: 10%;
 	position: relative;
 	background: #00aabb;
     border-radius: .4em;
-    margin-left: 5%;
+}
+
+.speech-question-bubble{
+	margin-left: 5%;
 }
 
 .speech-question-bubble:after {
@@ -40,7 +45,8 @@
 }
 
 .speech-response-bubble{
-	margin-left: 45%;
+	margin-left: 15%;
+	/* margin-left: 45%; */
 	background:  #9ada70;
 }
 

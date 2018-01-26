@@ -34,3 +34,9 @@
 .list-group-item{
     background-color: rgba(0, 0, 0, 0.473);
 }
+
+.list-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 20%;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-game-text',
@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game-text.component.css']
 })
 export class GameTextComponent implements OnInit {
-
-  textContent = "Carla: Ei, está na hora de acordar!";
+  @Input() textContent:string;
 
   constructor() { }
 

@@ -13,18 +13,18 @@
     <h1>Status</h1>
     <br>
     <h2>Inventário:</h2>
-    <div class="list-group">
-        <div class="list-group-item">
-          Chave da porta
+    <div class="list-group list-scroll">
+        <div *ngFor="let item of inventary" class="list-group-item">
+          {{item.text}}
         </div>
     </div>
     <br>
     <br>
     <br>
     <h2>Celular:</h2>
-    <app-phone></app-phone>
+    <app-phone [conversation]="conversation" [convName]="convName"></app-phone>
 </div>
 
-<app-game-screen></app-game-screen>
-<app-game-text></app-game-text>
+<app-game-screen [personagem]="personagemImg" [myBackgroundUrl]="bkgImg"></app-game-screen>
+<app-game-text [textContent]="displayText" ></app-game-text>
   
