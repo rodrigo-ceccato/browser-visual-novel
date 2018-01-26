@@ -47,9 +47,21 @@ export const chapterOne =[
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "Chaves do carro")],
         choices:
-          [new Choice(2, "Deixar chave debaixo da porta")],
-        displayText: "[faça uma ação]"
-      }
+          [new Choice(2, "Deixar chave"), new Choice(3, "Morrer")],
+        displayText: "()"
+    },
+
+    //3
+    {
+        gameControl: 0,
+        convName: "",
+        conversation: [],
+        personagemImg: "",
+        bkgImg: "",
+        inventary: [new InvItem(0, "Chaves do carro")],
+        choices: [],
+        displayText: "[GAME OVER]: Você morreu."
+    }
   ];
 
   
