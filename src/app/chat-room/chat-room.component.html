@@ -36,13 +36,25 @@
 
   </ul>
   <div class="bottom_wrapper clearfix">
-    <div class="message_input_wrapper">
+    <div class="message_input_wrapper" style="width: 50%">
       <input class="message_input" placeholder={{typeArea}} readonly/>
     </div>
-    <div (click)="clickSend()" class="send_message">
-      <div class="icon"></div>
-      <div class="text">Send</div>
-    </div>
+    
+    <div *ngIf="momentoDecisao == false" (click)="clickSend()" class="send_message">
+        <div class="icon"></div>
+        <div class="text">Send</div>
+      </div>
+
+    <div *ngIf="momentoDecisao == true" (click)="clickAgree()" class="send_message">
+        <div class="icon"></div>
+        <div class="text">Concordar</div>
+      </div>
+
+      <div *ngIf="momentoDecisao == true" (click)="clickDisagree()" class="send_message">
+          <div class="icon"></div>
+          <div class="text">Discordar</div>
+        </div>
+
   </div>
 </div>
 <div class="message_template">

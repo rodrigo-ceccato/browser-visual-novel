@@ -9,13 +9,14 @@ export class ChatRoomComponent implements OnInit {
   @Output() nextChapter = new EventEmitter<any>();
 
   moment = 0;
+  momentoDecisao = false;
 
   chat = [];
   typeArea = "Nada funciona!! Eu não aguento mais esses insetos!!";
 
   playerChat = [
-    "Nada funciona!! Eu não aguento mais esses insetos!!",
-    "Já chamou um dedetizador?",
+    "[Eu] Nada funciona!! Eu não aguento mais esses insetos!!",
+    "[Estranho] Já chamou um dedetizador?",
 
     "Três vezes!!!!",
     "Aquelas lâmpadas de matar insetos costumam funcionar",
@@ -43,8 +44,19 @@ export class ChatRoomComponent implements OnInit {
     // end of chat messages
     else {
       console.log("End of chat...");
+      this.momentoDecisao = true;
+    }
+  }
+
+  clickAgree(){
+    if(this.momentoDecisao == true){
       this.nextChapter.emit("nextChapter");
     }
+  }
+
+  clickDisagree(){
+    this.chat.push(new Message(false, "[Estranho deixou o chat]"));
+    //TODO colocar tela game over
   }
 }
 

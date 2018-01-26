@@ -178,6 +178,7 @@
     transition: all 0.2s linear;
     text-align: center;
     float: right;
+    margin-left: 30px;
   }
   .bottom_wrapper .send_message:hover {
     color: #a3d063;

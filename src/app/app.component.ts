@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SelectorContext } from '@angular/compiler';
 import { Message } from './phone/phone.component';
+import { Choice } from './models/choice';
 import { chapterOne } from './chapter-class/chapter-one';
 
 @Component({
@@ -69,16 +70,6 @@ export class gameStatus{
   displayText: string;
   inventary= [];
   choices = [];
-}
-
-export class Choice {
-  id: number;
-  text: string;
-
-  constructor(id:number, text:string){
-    this.id = id;
-    this.text = text;
-  }
 }
 
 export class InvItem{
