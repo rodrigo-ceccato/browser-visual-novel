@@ -48,7 +48,7 @@ export const chapterOne =[
       inventary: [],
       choices:
         [new Choice(2, "Próximo")],
-      displayText: "Jogador: malditos insetos tem mais deles aqui? eu não vejo nenhum ..\n\nEsposa *brava*:Graças a deus onde você estava???\n\nJogador:  Eu só sai para botar a chave debaixo do tapete ...\n\nEsposa: E demorou 3 horas???\n\nJogador: o que? Se isso é uma brincadeira está na hora de parar. você esta me assustando ....\n\nEsposa: Você deve estar de brincadeira! Eu quase liguei para a polícia!  Você não acredita em mim???"
+      displayText: "[Jogador]: malditos insetos tem mais deles aqui? eu não vejo nenhum ..\n\n[Esposa] *brava*:Graças a deus onde você estava???\n\n[Jogador]:  Eu só sai para botar a chave debaixo do tapete ...\n\n[Esposa]: E demorou 3 horas???\n\n[Jogador]: o que? Se isso é uma brincadeira está na hora de parar. você esta me assustando ....\n\n[Esposa]: Você deve estar de brincadeira! Eu quase liguei para a polícia!  Você não acredita em mim???"
     },
 
     //3

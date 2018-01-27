@@ -1,1 +1,4 @@
-<div style="white-space:pre-wrap" class="textArea">{{textContent}} </div>
+<!-- <div style="white-space:pre-wrap" class="textArea">{{textDisplay}} -->
+<div class="textArea">{{textDisplay}}
+    <button *ngIf="showNextButton" class="btn btn-default" (click)="clickNext()">Next({{numberOfDialogues}})</button>
+</div>
