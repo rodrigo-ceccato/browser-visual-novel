@@ -20,7 +20,7 @@ export const chapterOne =[
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [],
         choices:
-          [new Choice(1, "Deixa chave")],
+          [new Choice(1,"Voltar ao inicio ")],
         displayText: "[Você fecha o chat e se prepara para deixar a chave sob o tapete]"
     },
    
@@ -48,23 +48,23 @@ export const chapterOne =[
       inventary: [],
       choices:
         [new Choice(2, "Próximo")],
-      displayText: "Jogador: malditos insetos tem mais deles aqui? eu não vejo nenhum ..\n\nEsposa *brava*:Graças a deus onde você estava???\n\nJogador:  Eu só sai para botar a chave debaixo do tapete ...\n\nEsposa: E demorou 3 horas???\n\nJogador: o que? Se isso é uma brincadeira está na hora de parar. você esta me assustando ....\n\nEsposa: Você deve estar de brincadeira! Eu quase liguei para a polícia!  Você não acredita em mim???"
+      displayText: "[Jogador:] Malditos insetos tem mais deles aqui? eu não vejo nenhum ..\n\n[Esposa:] *brava*:Graças a Deus onde você estava???\n\n[Jogador:]  Eu só sai para botar a chave debaixo do tapete ...\n\n[Esposa:] E demorou 3 horas???\n\n[Jogador:] O que? Se isso é uma brincadeira está na hora de parar. Você esta me assustando ....\n\n[Esposa:] Você deve estar de brincadeira! Eu quase liguei para a polícia!  Você não acredita em mim???"
     },
 
     //3
     {
         gameControl: 0,
-        convName: "mensagem aqui",
-        conversation: [],
+        convName: "Estraho",
+        conversation: [new Message(false, "[Estranho:] trabalho feito, foi bom fazer negócios com você.")],
         personagemImg: "",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "Chaves do carro")],
         choices:
           [new Choice(2, "Deixar chave"), new Choice(3, "Morrer")],
-        displayText: "()"
+        displayText: " "
     },
 
-    //3
+    //4
     {
         gameControl: 0,
         convName: "",
@@ -73,8 +73,107 @@ export const chapterOne =[
         bkgImg: "",
         inventary: [new InvItem(0, "Chaves do carro")],
         choices: [],
-        displayText: "[GAME OVER]: Você morreu."
+        displayText: "[Jogador:] O exterminador veio aqui enquanto eu estive fora?\n\n[Esposa:] Que exterminador?  Você está me assustando “nome do jogador”."
     }
+    //5
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: ".[Jogador:] Que horas você chega ???preciso que você se livre das moscas.\n\n[Estranho;]Já me livrei.\n\n[Jogador:] Elas ainda estão aqui! ainda consigo escutar! \n\n[Estranho:]Isso porque ainda existe algo podre na casa.\n\n[Jogador:] Do que você está falando??? Você nem esteve aqui!!! \n\n[Estranho:] Eu não preciso estar para saber. \n\n[Jogador:] Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido! \n\n[Estranho:] Se livrar das coisas podres tem um preço mais alto ... \n\n[Jogador:] Não me importa eu preciso que o zumbido suma!!! \n\n[Estranho:]Você vai ter que assinar um contrato..."
+  }
+    //6 Essa é a tela de assinar contrato . como fazemos ?rs 
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "."
+  }
+    //7 game over 
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "Você volta consciência as vezes por alguns segundos ...\n a ultima vez que você acordou você estava cortando a garganta da sua esposa \n GAME OVER"
+  }
+    //8 tela de ganhar o jogo 
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "Você se mudou! Parabéns acabaram as moscas !!!"
+  }
+    //9
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "[Esposa:] Que zumbido? agora que você falou eu não estou vendo nenhuma mosca mesmo ... \n\n[Jogador:] Onde elas foram? droga eu vou ligar para o dedetizador. \n\n[Esposa:]  Que dedetizador? \n\n[Jogador:] Um cara que eu achei online ele vinha dedetizar enquanto eu estava no trabalho. \n\n[Esposa:] Você ia deixar um estranho sozinho na minha casa? \n\n[Jogador:] Ele estava bem recomendado! Nossa, esse zumbido está me dando dor de cabeça eu não consigo pensar.... \n\n[Esposa:] Senta no sofá. você está muito agitado ouvindo coisas e sem memória das últimas 3 horas ... Você não acha melhor ir para o médico? "
+  }
+    //10 Game Over
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "Sua mulher te deixou.\n O zumbido nunca para. Você nunca acha as moscas. Quando você não consegue mais suportar você tem uma ideia. Pega uma faca suja dentro da pia fétida lotada de louça e tenta furar seus tímpanos. Você põe pressão demais na faca e morre. GAME OVER"
+  }
+    //11 
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "1 dia depois (Consultório)\n\n---- Após o exame ------\n\n[Médico:] Hummm ... não parece ter nada errado ... estranho .... \n\n[Jogador:] Impossível! eu estou ouvindo um zumbido .... elas só podem estar aí dentro ... \n\n[Médico:] Humm e dês de quando você está ouvindo o zumbido? \n\n[Jogador]Desde antes de ontem ... \n\n[Médico:] E a perda de memória? \n\n[Jogador:] Eu já disse foi logo antes disso\n\n[Médico:] E você tem certeza que não bateu a cabeça ...\n\n[Jogador:]  Eu já disse que tenho!!!!\n\n[Médico:] Hummm você não ingeriu nenhum tipo de alucinógeno?\n\n[Jogador:]Nãooo ¬!!!\n\n[Médico:] Hummm¬"
+  }
+    //12
+    {
+      gameControl: 0,
+      convName: "",
+      conversation: [],
+      personagemImg: "",
+      bkgImg: "",
+      inventary: [new InvItem(0, )],
+      choices: [],
+      displayText: "[Jogador:]...vou meter a mão na sua cara ... \n\n [Médico :]Sr. “nome do jogador !” \n\n[Jogador:] Ahh esse maldito zumbido !!! me da um bisturi eu mesmo tiro as moscas dai \n\n[Médico:]sr. “nome do jogador “pelo amor de Deus. Não faça nada estupido! \n\n[Jogador:]Aha achei!!!\n\n[Médico:] Achou o quê ??Meu deus chamem a segurança! "
+  }
+  //13 game over 
+  {
+    gameControl: 0,
+    convName: "",
+    conversation: [],
+    personagemImg: "",
+    bkgImg: "",
+    inventary: [new InvItem(0, )],
+    choices: [],
+    displayText: "Você foi internado numa clinica psiquiátrica e passou o resto dos seus dias ouvindo o zumbido mesmo sob medicação.\n\n\GAME OVER"
+}
   ];
 
   
