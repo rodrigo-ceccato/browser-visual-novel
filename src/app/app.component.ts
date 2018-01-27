@@ -22,10 +22,12 @@ export class AppComponent {
   capituloAtual = [];
   posicaoCapitulo: number;
   changeChapter = false;
+  allowChoice = true;
 
   //audio file
   zumbido = new Audio('../assets/zumbido.mp3');
 
+  //TODO check if we can remove this
   conversation = [new Message(true, "Bom dia!")];
   convName = "Jamires";
   choices = [];
@@ -33,14 +35,12 @@ export class AppComponent {
 
 
   onSelectChoice(choice: Choice): void {
-    this.posicaoCapitulo = choice.id;
-    this.updateGameStatus();
-    // this.selectedChoice = choice;
-    // this.displayText = "as";
-    // this.inventary.push(new InvItem(this.inventary.length, "Adicionou item ao inventario"));
-    // this.conversation.push(new Message(false, "Adicionou mensagem A"));
-    // this.conversation.push(new Message(true, "Adicionou mensagem B"));
-    
+    if(this.allowChoice == true) {
+      this.posicaoCapitulo = choice.id;
+      this.updateGameStatus();
+    } else {
+      console.log("denied try to choice");
+    }
   }
 
   nextChapter(status:string){
@@ -52,6 +52,19 @@ export class AppComponent {
     // atencao: comeca na posicao UM 1
     this.posicaoCapitulo = 1;
     this.updateGameStatus();
+  }
+
+  setChangeStatus(status:string) {
+    if(status == "allow"){
+      console.log("choices allowed by chid");
+      this.allowChoice = true;
+    } else if (status == "block") {
+      console.log("choices denied by child");
+      this.allowChoice = false;
+    } else {
+      console.log("unexpected input");
+      this.allowChoice = true;
+    }
   }
 
   updateGameStatus(){
@@ -70,16 +83,6 @@ export class AppComponent {
 
     //work with change chapter
   }
-}
-
-export class gameStatus{
-  convName: string;
-  conversation = [];
-  personagemImg: string;
-  bkgImg: string;
-  displayText: string;
-  inventary= [];
-  choices = [];
 }
 
 export class InvItem{

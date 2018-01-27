@@ -14,3 +14,13 @@
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+button {
+    position: fixed;
+    bottom: 26%;
+    right: 28%;
+    color: white;
+    background-color: rgb(41, 36, 36);
+    border-color: rgb(156, 152, 152);
+    display: block;
+}

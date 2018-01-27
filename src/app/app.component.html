@@ -24,7 +24,7 @@
   </div>
 
   <app-game-screen *ngIf="showGameImage" [personagem]="personagemImg" [myBackgroundUrl]="bkgImg"></app-game-screen>
-  <app-game-text *ngIf="showGameHud" [textContent]="displayText" ></app-game-text>
+  <app-game-text (setChangeStatus) = "setChangeStatus($event)" *ngIf="showGameHud" [textContent]="displayText" ></app-game-text>
   
   <app-chat-room *ngIf="showChatRoom"
     (nextChapter) = "nextChapter($event)"
