@@ -21,7 +21,8 @@
 }
 
 .sideBar > button {
-    height: 8%;
+    /* height: 8%; */
+    white-space: normal;
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
     margin-bottom: 10px;
