@@ -1,4 +1,5 @@
 import { Choice } from '../models/choice';
+import { Message } from '../phone/phone.component';
 
 class InvItem{
     id: number;
@@ -55,7 +56,7 @@ export const chapterOne =[
     {
         gameControl: 0,
         convName: "Estraho",
-        conversation: [" Estranho: trabalho feito, foi bom fazer negócios com você."],
+        conversation: [new Message(false, "Estranho: trabalho feito, foi bom fazer negócios com você.")],
         personagemImg: "/assets/pictures/chars/margaret_unhappy.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
