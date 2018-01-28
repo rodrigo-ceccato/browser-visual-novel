@@ -86,6 +86,7 @@ export class AppComponent {
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 2){
       this.zumbido.pause();
       this.win.play();
+      
     }
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 3){
       this.zumbido.loop = true;

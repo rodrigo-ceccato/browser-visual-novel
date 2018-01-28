@@ -114,7 +114,7 @@ export const chapterOne =[
       convName: "",
       conversation: [],
       personagemImg: "/assets/pictures/chars/margaret_smiling.png",
-      bkgImg: "",
+      bkgImg: "/assets/pictures/win.gif",
       inventary: [new InvItem(0,"" )],
       choices: [new Choice(1,"Voltar ao inicio ")],
       displayText: "Você se mudou! Parabéns acabaram as moscas !!!"
