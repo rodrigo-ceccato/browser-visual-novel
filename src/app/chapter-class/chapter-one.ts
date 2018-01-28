@@ -30,7 +30,7 @@ export const chapterOne =[
     convName: "Sem mensagem",
     conversation: [],
     personagemImg: "",
-    bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
+    bkgImg: "/assets/pictures/bkg/door-jpg.jpg",
     inventary: [new InvItem(0, "Chave da porta")],
     choices:
       [new Choice(2, "Deixa chave")],
@@ -43,7 +43,7 @@ export const chapterOne =[
       gameControl: 1,
       convName: "sem mensagem",
       conversation: [],
-      personagemImg: "/assets/pictures/chars/char1.png",
+      personagemImg: "/assets/pictures/chars/Margaret_angry.png",
       bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
       inventary: [],
       choices:
@@ -56,7 +56,7 @@ export const chapterOne =[
         gameControl: 0,
         convName: "Estraho",
         conversation: [" Estranho: trabalho feito, foi bom fazer negócios com você."],
-        personagemImg: "",
+        personagemImg: "/assets/pictures/chars/margaret_unhappy.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
         choices:
@@ -69,8 +69,8 @@ export const chapterOne =[
         gameControl: 0,
         convName: "",
         conversation: [],
-        personagemImg: "",
-        bkgImg: "",
+        personagemImg: "/assets/pictures/chars/margaret_doubtfull.png",
+        bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
         choices: [new Choice(5,"AHHH não aguento mais esse zumbido! Vou falar com o dedetizador e ver se ele já está chegando! "),new Choice(0,"Jogador: Eu preciso saber o que está acontecendo comigo. vou na praça ver se alguém me viu sair do prédio.")],
         displayText: "[Jogador:] O exterminador veio aqui enquanto eu estive fora?\n\n[Esposa:] Que exterminador?  Você está me assustando “nome do jogador”."
@@ -80,11 +80,11 @@ export const chapterOne =[
       gameControl: 0,
       convName: "",
       conversation: [],
-      personagemImg: "",
-      bkgImg: "",
+      personagemImg: "/assets/pictures/chars/margaret_ pathetic.png",
+      bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
       inventary: [new InvItem(0, "")],
-      choices: [new Choice(8,"Se você não vai vir ok! eu não aguento mais essa casa e minha esposa também não vou me mudar. "),new Choice(6,"Ok eu assino!!!  Anda logo")],
-      displayText: ".[Jogador:] Que horas você chega ???preciso que você se livre das moscas.\n\n[Estranho;]Já me livrei.\n\n[Jogador:] Elas ainda estão aqui! ainda consigo escutar! \n\n[Estranho:]Isso porque ainda existe algo podre na casa.\n\n[Jogador:] Do que você está falando??? Você nem esteve aqui!!! \n\n[Estranho:] Eu não preciso estar para saber. \n\n[Jogador:] Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido! \n\n[Estranho:] Se livrar das coisas podres tem um preço mais alto ... \n\n[Jogador:] Não me importa eu preciso que o zumbido suma!!! \n\n[Estranho:]Você vai ter que assinar um contrato..."
+      choices: [new Choice(8,"Se você não vai vir ok! Eu não aguento mais essa casa e minha esposa também não, vou me mudar. "),new Choice(6,"Ok eu assino!!!  Anda logo")],
+      displayText: ".[Jogador:] Que horas você chega ???preciso que você se livre das moscas.\n\n[Estranho:]Já me livrei.\n\n[Jogador:] Elas ainda estão aqui! ainda consigo escutar! \n\n[Estranho:]Isso porque ainda existe algo podre na casa.\n\n[Jogador:] Do que você está falando??? Você nem esteve aqui!!! \n\n[Estranho:] Eu não preciso estar para saber. \n\n[Jogador:] Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido! \n\n[Estranho:] Se livrar das coisas podres tem um preço mais alto ... \n\n[Jogador:] Não me importa eu preciso que o zumbido suma!!! \n\n[Estranho:]Você vai ter que assinar um contrato..."
   },
     //6 Essa é a tela de assinar contrato . como fazemos ?rs 
     {
@@ -92,10 +92,10 @@ export const chapterOne =[
       convName: "",
       conversation: [],
       personagemImg: "",
-      bkgImg: "",
+      bkgImg: "/assets/pictures/bkg/contrato.jpg",
       inventary: [new InvItem(7, "Assinar contrato")],
       choices: [new Choice(1,"Voltar ao inicio ")],
-      displayText: "."
+      displayText: "Assine na linha marcada com um x"
   },
     //7 game over 
     {
@@ -147,7 +147,7 @@ export const chapterOne =[
       convName: "",
       conversation: [],
       personagemImg: "",
-      bkgImg: "",
+      bkgImg: "assets/pictures/bkg/hospital.jpg",
       inventary: [new InvItem(0,"")],
       choices: [new Choice(12,"Se eu ouvir mais um hummmm da sua parte e eu ... " ),new Choice(3, "obrigada pela atenção")],
       displayText: "1 dia depois (Consultório)\n\n---- Após o exame ------\n\n[Médico:] Hummm ... não parece ter nada errado ... estranho .... \n\n[Jogador:] Impossível! eu estou ouvindo um zumbido .... elas só podem estar aí dentro ... \n\n[Médico:] Humm e dês de quando você está ouvindo o zumbido? \n\n[Jogador]Desde antes de ontem ... \n\n[Médico:] E a perda de memória? \n\n[Jogador:] Eu já disse foi logo antes disso\n\n[Médico:] E você tem certeza que não bateu a cabeça ...\n\n[Jogador:]  Eu já disse que tenho!!!!\n\n[Médico:] Hummm você não ingeriu nenhum tipo de alucinógeno?\n\n[Jogador:]Nãooo ¬!!!\n\n[Médico:] Hummm¬"
@@ -158,7 +158,7 @@ export const chapterOne =[
       convName: "",
       conversation: [],
       personagemImg: "",
-      bkgImg: "",
+      bkgImg: "assets/pictures/bkg/hospital.jpg",
       inventary: [new InvItem(0, "")],
       choices: [new Choice(13,"Pegar bisturi")],
       displayText: "[Jogador:]...vou meter a mão na sua cara ... \n\n [Médico :]Sr. “nome do jogador !” \n\n[Jogador:] Ahh esse maldito zumbido !!! me da um bisturi eu mesmo tiro as moscas dai \n\n[Médico:]sr. “nome do jogador “pelo amor de Deus. Não faça nada estupido! \n\n[Jogador:]Aha achei!!!\n\n[Médico:] Achou o quê ??Meu deus chamem a segurança! "
@@ -169,7 +169,7 @@ export const chapterOne =[
     convName: "",
     conversation: [],
     personagemImg: "",
-    bkgImg: "",
+    bkgImg: "assets/pictures/bkg/hospital.jpg",
     inventary: [new InvItem(1,"bisturi")],
     choices: [new Choice(1, "voltar ao inicio")],
     displayText: "Você foi internado numa clinica psiquiátrica e passou o resto dos seus dias ouvindo o zumbido mesmo sob medicação.\n\n\GAME OVER"
