@@ -40,7 +40,7 @@ export const chapterOne =[
     //2
     {
       //game control 1 inicia zumbido
-      gameControl: 1,
+      gameControl: 3,
       convName: "sem mensagem",
       conversation: [],
       personagemImg: "/assets/pictures/chars/Margaret_angry.png",
@@ -53,7 +53,7 @@ export const chapterOne =[
 
     //3
     {
-        gameControl: 0,
+        gameControl: 1,
         convName: "Estraho",
         conversation: [new Message (false," Estranho: trabalho feito, foi bom fazer negócios com você.")],
         personagemImg: "/assets/pictures/chars/margaret_unhappy.png",
@@ -66,10 +66,10 @@ export const chapterOne =[
 
     //4
     {
-        gameControl: 0,
+        gameControl: 1,
         convName: "",
         conversation: [],
-        personagemImg: "/assets/pictures/chars/Margaret_hurt.png",
+        personagemImg:"/assets/pictures/chars/margaret_pathetic.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
         choices: [new Choice(5,"AHHH não aguento mais esse zumbido! Vou falar com o exterminador e ver se ele já está chegando! "),new Choice(0,"Jogador: Eu preciso saber o que está acontecendo comigo. vou na praça ver se alguém me viu sair do prédio.")],
@@ -77,10 +77,10 @@ export const chapterOne =[
     },
     //5
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [new Message (true,"[Jogador:] Que horas você chega ???preciso que você se livre das moscas."), new Message(false, "[Estranho:]Já me livrei."),new Message(true, "[Jogador:] Elas ainda estão aqui! ainda consigo escutar!"), new Message (false, "[Estranho:]Isso porque ainda existe algo podre na casa."), new Message (true,"[Jogador:] Do que você está falando??? Você nem esteve aqui!!!"), new Message(false, "[Estranho:] Eu não preciso estar para saber."), new Message(true, "[Jogador:] Claro que precisa! Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido!"), new Message(false,  "[Estranho:] Se livrar das coisas podres tem um preço mais alto ..."), new Message(true,  "[Jogador:] Não me importa eu preciso que o zumbido suma!!!"), new Message(false, "[Estranho:]Você vai ter que assinar um contrato...")],
-      personagemImg: "/assets/pictures/chars/margaret_pathetic.png",
+      personagemImg: "/assets/pictures/chars/Margaret_hurt.png",
       bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
       inventary: [new InvItem(0, "")],
       choices: [new Choice(8,"Se você não vai vir ok! Eu não aguento mais essa casa e minha esposa também não, vou me mudar. "),new Choice(6,"Ok eu assino!!!  Anda logo")],
@@ -88,7 +88,7 @@ export const chapterOne =[
   },
     //6 Essa é a tela de assinar contrato . como fazemos ?rs 
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "",
@@ -99,7 +99,7 @@ export const chapterOne =[
   },
     //7 game over 
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "",
@@ -110,7 +110,7 @@ export const chapterOne =[
   },
     //8 tela de ganhar o jogo 
     {
-      gameControl: 0,
+      gameControl: 2,
       convName: "",
       conversation: [],
       personagemImg: "/assets/pictures/chars/margaret_smiling.png",
@@ -121,7 +121,7 @@ export const chapterOne =[
   },
     //9
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "/assets/pictures/chars/margaret_disappointed.png",
@@ -132,7 +132,7 @@ export const chapterOne =[
   },
     //10 Game Over
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "",
@@ -143,7 +143,7 @@ export const chapterOne =[
   },
     //11 
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "/assets/pictures/chars/médico.png",
@@ -154,7 +154,7 @@ export const chapterOne =[
   },
     //12
     {
-      gameControl: 0,
+      gameControl: 1,
       convName: "",
       conversation: [],
       personagemImg: "/assets/pictures/chars/médico.png",
@@ -165,10 +165,10 @@ export const chapterOne =[
   },
   //13 game over 
   {
-    gameControl: 0,
+    gameControl: 1,
     convName: "",
     conversation: [],
-    personagemImg: "/assets/pictures/chars/médico.png",
+    personagemImg: "",
     bkgImg: "assets/pictures/bkg/gameover.jpg",
     inventary: [new InvItem(1,"bisturi")],
     choices: [new Choice(1, "voltar ao inicio")],

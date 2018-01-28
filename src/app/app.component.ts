@@ -23,9 +23,12 @@ export class AppComponent {
   posicaoCapitulo: number;
   changeChapter = false;
   allowChoice = true;
+  gameControl= 0;
 
   //audio file
   zumbido = new Audio('../assets/zumbido2.mp3');
+  win = new Audio('../assets/win.mp3')
+  doorOpen = new Audio('../assets/dooropen.mp3')
 
   //TODO check if we can remove this
   conversation = [new Message(true, "Bom dia!")];
@@ -80,8 +83,20 @@ export class AppComponent {
       this.zumbido.loop = true;
       this.zumbido.play();
     }
+    if(this.capituloAtual[this.posicaoCapitulo].gameControl == 2){
+      this.zumbido.pause();
+      this.win.play();
+    }
+    if(this.capituloAtual[this.posicaoCapitulo].gameControl == 3){
+      this.zumbido.loop = true;
+      this.doorOpen.play();
+      this.zumbido.play();
+    }
+
 
     //work with change chapter
+
+    
   }
 }
 
