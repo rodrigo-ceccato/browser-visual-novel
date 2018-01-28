@@ -103,10 +103,10 @@ export const chapterOne =[
       convName: "",
       conversation: [],
       personagemImg: "",
-      bkgImg: "",
+      bkgImg: "/assets/pictures/bkg/gameover.jpg",
       inventary: [new InvItem(0, "")],
       choices: [new Choice(1," Voltar ao inicio")],
-      displayText: "Você volta consciência as vezes por alguns segundos ...\n a ultima vez que você acordou você estava cortando a garganta da sua esposa \n GAME OVER"
+      displayText: "Você perdeu completamente o controle sobre seu proprio corpo.\n\n Na maioria do tempo você não sabe o que seu corpo está fazendo. \n\n  Mas as vezes você volta a si por alguns segundos ...\n\n Na ultima vez que você acordou você estava cortando a garganta da sua esposa \n GAME OVER"
   },
     //8 tela de ganhar o jogo 
     {

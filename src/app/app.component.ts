@@ -25,7 +25,7 @@ export class AppComponent {
   allowChoice = true;
 
   //audio file
-  zumbido = new Audio('../assets/zumbido.mp3');
+  zumbido = new Audio('../assets/zumbido2.mp3');
 
   //TODO check if we can remove this
   conversation = [new Message(true, "Bom dia!")];
