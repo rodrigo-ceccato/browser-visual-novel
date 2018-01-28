@@ -1,5 +1,6 @@
 import { Choice } from '../models/choice';
-
+import { Choice } from '../phone/phone';
+import { Message } from '../phone/phone.component';
 class InvItem{
     id: number;
     text: string;
@@ -55,7 +56,7 @@ export const chapterOne =[
     {
         gameControl: 0,
         convName: "Estraho",
-        conversation: [" Estranho: trabalho feito, foi bom fazer negócios com você."],
+        conversation: [new Message (false," Estranho: trabalho feito, foi bom fazer negócios com você.")],
         personagemImg: "/assets/pictures/chars/margaret_unhappy.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
@@ -72,19 +73,19 @@ export const chapterOne =[
         personagemImg: "/assets/pictures/chars/margaret_doubtfull.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
-        choices: [new Choice(5,"AHHH não aguento mais esse zumbido! Vou falar com o dedetizador e ver se ele já está chegando! "),new Choice(0,"Jogador: Eu preciso saber o que está acontecendo comigo. vou na praça ver se alguém me viu sair do prédio.")],
-        displayText: "[Jogador:] O exterminador veio aqui enquanto eu estive fora?\n\n[Esposa:] Que exterminador?  Você está me assustando “nome do jogador”."
+        choices: [new Choice(5,"AHHH não aguento mais esse zumbido! Vou falar com o exterminador e ver se ele já está chegando! "),new Choice(0,"Jogador: Eu preciso saber o que está acontecendo comigo. vou na praça ver se alguém me viu sair do prédio.")],
+        displayText: "[Jogador:] O exterminador veio aqui enquanto eu estive fora?\n\n[Esposa:] Que exterminador?  Você está agindo estranho , esta me assustando ."
     },
     //5
     {
       gameControl: 0,
       convName: "",
-      conversation: [],
+      conversation: [new Message (true,"[Jogador:] Que horas você chega ???preciso que você se livre das moscas."), new Message(false, "[Estranho:]Já me livrei."),new Message(true, "[Jogador:] Elas ainda estão aqui! ainda consigo escutar!"), new Message (false, "[Estranho:]Isso porque ainda existe algo podre na casa."), new Message (true,"[Jogador:] Do que você está falando??? Você nem esteve aqui!!!"), new Message(false, "[Estranho:] Eu não preciso estar para saber."), new Message(true, "[Jogador:] Claro que precisa! Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido!"), new Message(false,  "[Estranho:] Se livrar das coisas podres tem um preço mais alto ..."), new Message(true,  "[Jogador:] Não me importa eu preciso que o zumbido suma!!!") new Message(false, "[Estranho:]Você vai ter que assinar um contrato...")],
       personagemImg: "/assets/pictures/chars/margaret_ pathetic.png",
       bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
       inventary: [new InvItem(0, "")],
       choices: [new Choice(8,"Se você não vai vir ok! Eu não aguento mais essa casa e minha esposa também não, vou me mudar. "),new Choice(6,"Ok eu assino!!!  Anda logo")],
-      displayText: ".[Jogador:] Que horas você chega ???preciso que você se livre das moscas.\n\n[Estranho:]Já me livrei.\n\n[Jogador:] Elas ainda estão aqui! ainda consigo escutar! \n\n[Estranho:]Isso porque ainda existe algo podre na casa.\n\n[Jogador:] Do que você está falando??? Você nem esteve aqui!!! \n\n[Estranho:] Eu não preciso estar para saber. \n\n[Jogador:] Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido! \n\n[Estranho:] Se livrar das coisas podres tem um preço mais alto ... \n\n[Jogador:] Não me importa eu preciso que o zumbido suma!!! \n\n[Estranho:]Você vai ter que assinar um contrato..."
+      displayText: ""
   },
     //6 Essa é a tela de assinar contrato . como fazemos ?rs 
     {
