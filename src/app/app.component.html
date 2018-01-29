@@ -23,9 +23,10 @@
       <app-phone [conversation]="conversation" [convName]="convName"></app-phone>
   </div>
 
+  <!-- <app-contract *ngIf="showContract"></app-contract> -->
   <app-game-screen class = "people" *ngIf="showGameImage" [personagem]="personagemImg" [myBackgroundUrl]="bkgImg"></app-game-screen>
   <app-game-text (setChangeStatus) = "setChangeStatus($event)" *ngIf="showGameHud" [textContent]="displayText" ></app-game-text>
   
   <app-chat-room *ngIf="showChatRoom"
-    (nextChapter) = "nextChapter($event)"
-  ></app-chat-room>
+    (nextChapter) = "nextChapter($event)">
+  </app-chat-room>

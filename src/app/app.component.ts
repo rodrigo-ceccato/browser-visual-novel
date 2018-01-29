@@ -24,6 +24,7 @@ export class AppComponent {
   posicaoCapitulo: number;
   changeChapter = false;
   allowChoice = true;
+  showContract = false;
   gameControl= 0;
 
   //audio file
@@ -82,6 +83,8 @@ export class AppComponent {
 
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 0){
       this.showRightBar = true;
+      this.showGameImage = true;
+      this.showContract = false;
     }
     
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 1){
@@ -97,6 +100,11 @@ export class AppComponent {
       this.zumbido.loop = true;
       this.doorOpen.play();
       this.zumbido.play();
+    }
+    if(this.capituloAtual[this.posicaoCapitulo].gameControl == 4){
+      this.showRightBar = false;
+      this.showContract = true;
+      this.showGameImage = true;
     }
 
 

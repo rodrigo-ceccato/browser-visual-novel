@@ -57,6 +57,9 @@ export class ChatRoomComponent implements OnInit {
       console.log("End of chat...");
       this.momentoDecisao = true;
     }
+
+    // scroll down
+    document.getElementById('chatArea').scrollTop = document.getElementById('chatArea').scrollHeight;
   }
 
   clickAgree(){

@@ -67,8 +67,8 @@ export const chapterOne =[
     //4
     {
         gameControl: 1,
-        convName: "",
-        conversation: [],
+        convName: "Estranho",
+        conversation: [new Message (false," Estranho: trabalho feito, foi bom fazer negócios com você.")],
         personagemImg:"/assets/pictures/chars/margaret_pathetic.png",
         bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
         inventary: [new InvItem(0, "")],
@@ -78,7 +78,7 @@ export const chapterOne =[
     //5
     {
       gameControl: 1,
-      convName: "",
+      convName: "Estranho",
       conversation: [new Message (true,"[Jogador:] Que horas você chega ???preciso que você se livre das moscas."), new Message(false, "[Estranho:]Já me livrei."),new Message(true, "[Jogador:] Elas ainda estão aqui! ainda consigo escutar!"), new Message (false, "[Estranho:]Isso porque ainda existe algo podre na casa."), new Message (true,"[Jogador:] Do que você está falando??? Você nem esteve aqui!!!"), new Message(false, "[Estranho:] Eu não preciso estar para saber."), new Message(true, "[Jogador:] Claro que precisa! Você quer vir logo pelo amor de deus! Eu preciso me livrar desse maldito zumbido!"), new Message(false,  "[Estranho:] Se livrar das coisas podres tem um preço mais alto ..."), new Message(true,  "[Jogador:] Não me importa eu preciso que o zumbido suma!!!"), new Message(false, "[Estranho:]Você vai ter que assinar um contrato...")],
       personagemImg: "/assets/pictures/chars/Margaret_hurt.png",
       bkgImg: "/assets/pictures/bkg/bkg-room.jpg",
@@ -88,7 +88,7 @@ export const chapterOne =[
   },
     //6 Essa é a tela de assinar contrato . como fazemos ?rs 
     {
-      gameControl: 1,
+      gameControl: 4,
       convName: "",
       conversation: [],
       personagemImg: "",
