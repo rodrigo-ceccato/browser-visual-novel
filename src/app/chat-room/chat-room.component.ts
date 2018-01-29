@@ -36,9 +36,7 @@ export class ChatRoomComponent implements OnInit {
   "Estranho:Se não quiser fechar contrato é só dizer que eu vou embora.",
   
   "Jogador: Nãããoooo pelo amor de Deus! Eu aceito pagar o preço que você quiser! Então como fazemos isso?",
-  "Estranho: Fechado. Tem porteiro no prédio, você pode avisa o que vou fazer. Você deixa a chave debaixo do tapete da porta da frente.",
-  
-  
+  "Estranho: Fechado. Tem porteiro no prédio, você pode avisa o que vou fazer. Você deixa a chave debaixo do tapete da porta da frente." 
  ];
 
   constructor() { }
