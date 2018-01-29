@@ -18,6 +18,7 @@ export class AppComponent {
   bkgImg: string = "/assets/pictures/bkg/bkg-room.jpg";
   showGameHud = false;
   showGameImage = false;
+  showRightBar = true;
   showChatRoom = true;
   capituloAtual = [];
   posicaoCapitulo: number;
@@ -79,6 +80,10 @@ export class AppComponent {
     this.displayText = this.capituloAtual[this.posicaoCapitulo].displayText;
     this.inventary = this.capituloAtual[this.posicaoCapitulo].inventary;
 
+    if(this.capituloAtual[this.posicaoCapitulo].gameControl == 0){
+      this.showRightBar = true;
+    }
+    
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 1){
       this.zumbido.loop = true;
       this.zumbido.play();
@@ -86,7 +91,7 @@ export class AppComponent {
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 2){
       this.zumbido.pause();
       this.win.play();
-      
+      this.showRightBar = false;
     }
     if(this.capituloAtual[this.posicaoCapitulo].gameControl == 3){
       this.zumbido.loop = true;
