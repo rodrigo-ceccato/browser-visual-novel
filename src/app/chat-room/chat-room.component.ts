@@ -38,17 +38,7 @@ export class ChatRoomComponent implements OnInit {
   "Jogador: Nãããoooo pelo amor de Deus! Eu aceito pagar o preço que você quiser! Então como fazemos isso?",
   "Estranho: Fechado. Tem porteiro no prédio, você pode avisa o que vou fazer. Você deixa a chave debaixo do tapete da porta da frente.",
   
-  "[Eu] Nada funciona!! Eu não aguento mais esses insetos!!",
-  "[Estranho] Já chamou um dedetizador?",
-
-  "Três vezes!!!!",
-  "Aquelas lâmpadas de matar insetos costumam funcionar",
-
-  "Já tentei tudo !! já fazem 5 meses! nada funciona! Está me deixando maluco! Minha mulher quer se mudar!",
-  "minha avó costumava por uma bacia de agua debaixo de uma lâmpada brilhante os insetos ficavam confusos e se afogavam.",
-
-  "Nada funciona ninguém conhece um veneno mais potente?",
-  "Os métodos mais antigos não vão funcionar e venenos normais também não. Eu sei como resolver o seu problema. Trabalho com isso."
+  
  ];
 
   constructor() { }
